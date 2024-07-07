@@ -150,6 +150,41 @@ navLink.forEach((item)=>{
 
 // Navbar Ends
 
+// Video-bg Starts
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = [
+      'videos/video-7.mp4',
+      'videos/video-8.mp4'
+  ];
+  
+  let currentVideoIndex = 0;
+  const video1 = document.getElementById('video1');
+  const video2 = document.getElementById('video2');
+
+  video1.src = videos[currentVideoIndex];
+  video1.play();
+  video1.style.opacity = 1;
+
+  setInterval(() => {
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+
+      const nextVideo = (video1.style.opacity == 1) ? video2 : video1;
+      const currentVideo = (video1.style.opacity == 1) ? video1 : video2;
+
+      nextVideo.src = videos[currentVideoIndex];
+      nextVideo.play();
+      nextVideo.style.opacity = 1;
+
+      setTimeout(() => {
+          currentVideo.style.opacity = 0;
+      }, 1000);
+  }, 10000);
+});
+
+
+
+// Video-bg Ends
+
 // Image Hovering
 
 let images = document.getElementsByClassName("perfume-img");
@@ -281,3 +316,17 @@ const btn = document.querySelector(".audio-btn");
 btn.addEventListener("click", () => {
   audio.play();
 });
+
+
+// Testimonail Starts
+
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
+
+const swiperEl = document.querySelector("swiper-container");
+swiperEl.addEventListener("autoplaytimeleft", (e) => {
+  const [swiper, time, progress] = e.detail;
+  progressCircle.style.setProperty("--progress", 1 - progress);
+  progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+});
+// Testimonial Ends
