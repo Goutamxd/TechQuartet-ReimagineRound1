@@ -6,6 +6,15 @@ html {
   background-color: rgb(33, 1, 33);
 }
 
+@font-face {
+  font-family: neu;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+  font-family: thin;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
+
 /* Preloader */
 #preloader {
   width: 100%;
@@ -20,12 +29,12 @@ html {
   background-size: 30%;
 }
 
+
 /* Navbar starts */
 
 .navbar-nav {
   font-family: "Playwrite DE Grund", cursive;
   font-weight: bolder;
-   
 }
 
 .navbar-brand {
@@ -40,21 +49,49 @@ html {
   filter: contrast(10);
 }
 .navbar {
-
   background-color: rgb(33, 1, 33);
-
 }
 
 .nav-link:hover {
   color: rgb(33, 1, 33);
-  
 }
-.nav-link, .navbar-brand{
+.nav-link,
+.navbar-brand {
   color: white;
-  
 }
 
+/* Circled Animation */
 
+
+#circleVideo{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+  margin-top: 140px;
+}
+#circle{
+  width: 14vw;
+  height: 14vw;
+  /* background-color: blueviolet; */
+  border: solid rgb(26, 1, 9) 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw;
+}
+#circle #inner-circle{
+  width: 13vw;
+  height: 13vw;
+  /* background-color: blue; */
+  border-radius: 50%;
+}
+#inner-circle video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 /* perfumes */
 
 .perfume-img {
@@ -67,7 +104,6 @@ html {
 .Classic-col {
   height: 560px;
 }
-
 
 .bestSeller-btn,
 .Seasonal-btn,
@@ -89,7 +125,8 @@ html {
 #Classic-title,
 #Collection-title,
 #Accordion-title,
-#Contact-title {
+#Contact-title,
+#HoverImage-title {
   font-weight: 900;
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -124,95 +161,152 @@ html {
   background-color: rgb(237, 206, 206);
 }
 
+/* HoverImage */
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0b0701;
+  font-family: gilroy;
+}
+#elem-container {
+  overflow: hidden;
+  padding: 0vw 0vw;
+}
+.elem {
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #7f7d7d;
+  left: 0%;
+  padding: 0vw;
+}
+.content {
+  position: relative;
+  z-index: 9;
+  padding: 2.1vw 0vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.front h1 {
+  font-size: 2vw;
+  padding: 0vw 2.1vw;
+}
+.back {
+  padding: 0vw 2.1vw;
+  color: #fff;
+}
+.back h5 {
+  font-size: 0.9vw;
+  font-family: thin;
+  color: #f3eeee;
+}
+.back p {
+  opacity: 0.5;
+  font-family: thin;
+  margin-top: 2px;
+}
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(77, 18, 45);
+  left: 0%;
+  top: -100%;
+  position: absolute;
+  transition: all ease 0.4s;
+}
+.elem:hover .overlay {
+  top: 0%;
+}
+#fixed-image {
+  height: 55vh;
+  width: 48vh;
+  background-color: rgb(229, 218, 213);
+  border-radius: 10px;
+  position: fixed;
+  top: 25%;
+  z-index: 99;
+  left: 42%;
+  display: none;
+  background-size: cover;
+  overflow: hidden;
+}
+
 /* Collections */
 
-.Collection-col{
+.Collection-col {
   height: 280px;
   margin-top: 40px;
 }
 
-.collection img{
-width: 100%;
-height: 260px;
+.collection img {
+  width: 100%;
+  height: 260px;
 }
 
-.Collection-btn{
+.Collection-btn {
   margin-top: 4%;
 }
 
-
 /* Accordion */
 
-.accordion-item{
+.accordion-item {
   background-color: rgb(54, 3, 54);
   color: white;
-
 }
 
-.accordion-button{
-  background-color:rgb(33, 1, 33) ;
+.accordion-button {
+  background-color: rgb(33, 1, 33);
   color: white;
 }
-
 
 /* Contact Us */
 
-
- 
- #contactBox{
+#contactBox {
   width: 40%;
   height: 50%;
   margin: auto;
   margin-top: 6%;
 }
 
-
-input.css{
+input.css {
   margin: 2.6% 0;
   height: 40px;
-  
 }
 
-button.css{
+button.css {
   margin: 2.6% 0;
   width: 40%;
 }
 
-textarea{
-  margin:2.6% 0 ;
+textarea {
+  margin: 2.6% 0;
 }
 
-.css:hover{
- 
+.css:hover {
   background-color: rgb(33, 1, 33);
   color: white;
-
 }
-.css:hover::placeholder{
-  color:white;
+.css:hover::placeholder {
+  color: white;
 }
-
 
 /* Footer */
-footer{
+footer {
   margin-top: 20%;
   background-color: white;
-  padding:0 100px;
-
+  padding: 0 100px;
 }
 
-footer .d-flex li:hover{
-scale:1.4
+footer .d-flex li:hover {
+  scale: 1.4;
 }
 
 footer .flex-column a {
-font-size: 1.3rem;
-
+  font-size: 1.3rem;
 }
 footer .flex-column li:hover {
-color: rgb(33, 1, 33);
-font-weight: bold;
-
+  color: rgb(33, 1, 33);
+  font-weight: bold;
 }
-
-
