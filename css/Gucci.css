@@ -163,7 +163,8 @@ html {
 #Collection-title,
 #Accordion-title,
 #Contact-title,
-#HoverImage-title {
+#HoverImage-title,
+#Testimonial-title {
   font-weight: 900;
   font-size: 2.5rem;
   margin-bottom: 30px;
