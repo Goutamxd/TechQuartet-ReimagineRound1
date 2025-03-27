@@ -26,8 +26,8 @@ Swiper.js	Sleek product sliders and interactive carousels
 ✅ 🎞️ Interactive Product Sliders – Swiper.js integration for an engaging shopping experience
 ✅ 📱 Fully Responsive – Bootstrap-powered, optimized for all devices
 
-# 👥 Meet Our Team
-👨‍💻 Goutam Saha
+# 👥 Meet Our Team - TechQuartet
+👨‍💻 Goutam 
 👩‍💻 Somaya
 👩‍💻 Somaya2
 👩‍💻 Priyanshi
