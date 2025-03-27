@@ -17,25 +17,10 @@ Swiper.js – Interactive sliders for an enhanced user experience
 ✅ Interactive Sliders – Swiper.js integration for a dynamic product showcase
 
 👥 Team
-Goutam Saha
-
-Somaya
-
-Somaya2
-
-Priyanshi
+Goutam , Somaya , Somaya2 , Priyanshi
 
 📸 Screenshots
 (Add some screenshots or a GIF showcasing animations)
 
-📂 Installation
-Clone the repo and run it locally:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/reimagined-gucci.git
-cd reimagined-gucci
-open index.html
 🌟 Connect
 If you like this project, consider giving it a ⭐ and let's connect!
